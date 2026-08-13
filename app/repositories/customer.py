@@ -1,15 +1,22 @@
-from sqlalchemy import text
+from sqlalchemy import select
+from sqlalchemy.orm import Session
+
 from app.database import engine
-def get_customers():
-    with engine.connect() as connection:
-        result = connection.execute(
-            text("SELECT * FROM customers")
-        )
+from app.models import Customer
 
-        customers = []
 
-        for row in result:
-            customers.append(dict(row._mapping))
+def get_all_customers():
+    with Session(engine) as session:
+        statement = select(Customer)
 
-        return customers
-    
+        customers = session.scalars(statement).all()
+
+        return [
+            {
+                "id": customer.id,
+                "name": customer.name,
+                "email": customer.email,
+                "city": customer.city,
+            }
+            for customer in customers
+        ]
