@@ -473,11 +473,11 @@ Example response:
 
 ### Home Page
 
-![Text-to-SQL Home Page](docs/screenshots/home.png)
+![Text-to-SQL Home Page](docs/home.png)
 
 ### Query Results
 
-![Text-to-SQL Query Results](docs/screenshots/results.png)
+![Text-to-SQL Query Results](docs/results.png)
 
 
 ------------------------------------------------------------------------
