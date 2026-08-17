@@ -470,21 +470,12 @@ Example response:
 
 ## 🖥️ Screenshots
 
-Add your screenshots to the repository, for example:
 
-``` text
-docs/
-└── screenshots/
-    ├── home.png
-    └── results.png
-```
-
-Then add them to this section:
 
 ``` markdown
-![Text-to-SQL Interface](docs/screenshots/home.png)
+![Text-to-SQL Interface](docs/home.png)
 
-![Query Results](docs/screenshots/results.png)
+![Query Results](docs/results.png)
 ```
 
 ------------------------------------------------------------------------
