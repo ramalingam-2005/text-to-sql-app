@@ -468,15 +468,17 @@ Example response:
 
 ------------------------------------------------------------------------
 
+
 ## 🖥️ Screenshots
 
+### Home Page
 
+![Text-to-SQL Home Page](docs/screenshots/home.png)
 
-``` markdown
-![Text-to-SQL Interface](docs/home.png)
+### Query Results
 
-![Query Results](docs/results.png)
-```
+![Text-to-SQL Query Results](docs/screenshots/results.png)
+
 
 ------------------------------------------------------------------------
 
