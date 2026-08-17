@@ -51,7 +51,7 @@ def generate_sql(prompt, max_retries=3):
             time.sleep(wait_time)
 
 
-def text_to_sql(question, top_k=3):
+def text_to_sql(question, top_k=5):
 
     results = retrieve_schema(
         question,
@@ -79,7 +79,7 @@ def text_to_sql(question, top_k=3):
     return sql
 
 
-def ask_database(question, top_k=3):
+def ask_database(question, top_k=5):
 
     sql = text_to_sql(
         question,
